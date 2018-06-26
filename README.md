@@ -1,5 +1,5 @@
 # Python-Code
-Code exercises
+Code exercises.
 
 
-Record and save my own practice code
+Record and save my own practice code.
