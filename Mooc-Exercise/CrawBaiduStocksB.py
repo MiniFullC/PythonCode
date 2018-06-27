@@ -4,7 +4,7 @@ import traceback
 import re
 
 
- #发起请求
+#发起请求
 def getHTMLText(url, code="utf-8"):
     try:
         r = requests.get(url)
@@ -15,7 +15,7 @@ def getHTMLText(url, code="utf-8"):
         return ""
  
  
- #利用正则和bs4提取对应的股票信息
+#利用正则和bs4提取对应的股票信息
 def getStockList(lst, stockURL):
     html = getHTMLText(stockURL, "GB2312")
     soup = BeautifulSoup(html, 'html.parser') 
@@ -29,7 +29,7 @@ def getStockList(lst, stockURL):
  
  
  
- #糅合爬取的数据，合理美观的输出
+#综合爬取的数据，合理美观的输出
 def getStockInfo(lst, stockURL, fpath):
     count = 0
     for stock in lst:
